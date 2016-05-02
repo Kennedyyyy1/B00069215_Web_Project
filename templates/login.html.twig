@@ -1,0 +1,35 @@
+{% extends '_base.html.twig' %}
+
+{# ------------------------------------------------- #}
+{% block pageTitle %}Login page{% endblock %}
+
+{# ------------------------------------------------- #}
+{% block loginLinkStyle %}current_page{% endblock %}
+
+{# ------------------------------------------------- #}
+{% block main %}
+
+<h1>
+    Login Page
+</h1>
+
+    <p>
+        Enter your login details below to see how your doing.
+    </p>
+
+    <form method="post" action="/processLoginForm">
+
+        <p>
+            <input type="text" name="username" placeholder="Username">
+        </p>
+
+        <p>
+            <input type="password" name="password" placeholder="Password">
+        </p>
+
+        <p>
+            <input type="submit" value="Login">
+        </p>
+
+    </form>
+{% endblock %}

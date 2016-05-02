@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Ross
+ * Date: 02/05/2016
+ * Time: 18:40
+ */
+
+namespace Itb;
+use Silex\Application;
+use Symfony\Component\HttpFoundation\Request;
+
+class LoginController
+{
+
+    public function submitAction(Request $request, Application $app){
+
+
+
+            $template_name = 'details';
+            return $app['twig']->render($template_name.'.html.twig',[]);
+
+    }
+
+}
